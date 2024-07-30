@@ -1,9 +1,13 @@
 Сервис «Поздравлятор».
 
 В рамках работы был разработан Веб сервис, состоящий из трех основных компонентов:
+
 •	Frontend Веб-интерфейс (Angular SPA)
+
 •	Backend API (C#, ASP.NET Core Веб-API, Entity Framework, MS SQL Server)
+
 •	Сервис для рассылки почты (C#, SMTP)
+
 Также в качестве связующего звена между последними был выбран брокер сообщений RabbitMQ.
 Ссылка на GitHub: rupasovk/Congratulator (github.com)
 (https://github.com/rupasovk/Congratulator)
