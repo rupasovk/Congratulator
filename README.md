@@ -9,6 +9,7 @@
 •	Сервис для рассылки почты (C#, SMTP)
 
 Также в качестве связующего звена между последними был выбран брокер сообщений RabbitMQ.
+
 ------------------
 Ссылка на GitHub: rupasovk/Congratulator (github.com)
 (https://github.com/rupasovk/Congratulator)
