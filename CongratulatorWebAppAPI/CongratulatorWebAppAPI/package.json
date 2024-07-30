@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@angular/animations": "^18.1.1",
+    "@angular/cdk": "^18.1.1",
+    "@angular/material": "^18.1.1",
+    "material-design-icons": "^3.0.1",
+    "ngx-bootstrap": "^18.0.2"
+  }
+}
