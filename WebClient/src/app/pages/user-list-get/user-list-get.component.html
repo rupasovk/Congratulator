@@ -1,0 +1,25 @@
+<h2>Список всех пользователей</h2>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Birthday</th>
+      <th>Email</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.Id }}</td>
+      <td>{{ user.UserName }}</td>
+      <td>{{ user.Surname }}</td>
+      <td>{{ user.Birthday | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+      <td>{{ user.Email }}</td>
+      <td>{{ user.Country }}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>

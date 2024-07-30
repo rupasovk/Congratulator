@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Register</h1>
+  
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="surname">Surname</label>
+        <input type="text" class="form-control" id="surname" formControlName="surname" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="birthday">Birthday</label>
+        <input type="datetime" class="form-control" id="birthday" formControlName="birthday" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="country" class="form-control" id="country" formControlName="country" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="image">Photo</label>
+        <input type="file" class="form-control-file" id="image" formControlName="image" (change)="onPhotoSelected($event)">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid || isLoading">
+          <span class="spinner-border spinner-border-sm" *ngIf="isLoading"></span>
+          Register
+        </button>
+      </div>  
+    </form>
+  </div>

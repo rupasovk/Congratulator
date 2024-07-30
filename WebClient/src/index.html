@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularCongratulatorWebClient</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+    }
+    
+    /* Шапка */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 5px; /* Верхний внешний отступ */
+    }
+
+    .label {
+      font-size: 15px;
+      font-weight: thin;
+      margin-bottom: 15px; /* Нижний внешний отступ */
+      margin-left: 2px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav li {
+      margin-right: 20px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    /* Основное содержимое */
+    main {
+      padding: 40px;
+    }
+    
+    /* Футер */
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+    /* Общие стили */
+    footer-bottom {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+      line-height: 50px; /* центрирование текста по вертикали */
+    }
+
+    footer-bottom, #wrapper:after {
+      height: 50px; /* высота футера */
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-bottom: 0;
+    }
+
+    .footer-section {
+      flex-basis: 30%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Стили для секции "About" */
+    .about p {
+      line-height: 1.5;
+    }
+
+    .contact span {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .contact i {
+      margin-right: 10px;
+    }
+
+    /* Стили для секции "Links" */
+    .links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .links li {
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: #ccc;
+    }
+
+    /* Стили для секции "Contact Form" */
+    .text-input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #444;
+      border: none;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    footer-bottom {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Congratulator</div>
+    <div class="label">Сервис автоматической рассылки поздравлений</div>
+    <nav>
+      <ul>
+        <li><a href="Birthdays">Birthdays</a></li>
+        <li><a href="Users">Users</a></li>
+        <li><a href="NewUser">NewUser</a></li>
+      </ul>
+    </nav>
+  </header>
+  <app-root></app-root>
+  <router-outlet></router-outlet>
+</body>
+<!--<footer>
+  <div class="footer-bottom">
+    Congratulator
+    &copy; 2024 | Все права защищены
+  </div>
+</footer>
+!-->
+</html>

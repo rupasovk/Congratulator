@@ -1,0 +1,32 @@
+<h2>Ближайшие дни рождения</h2>
+<a>Не забудьте поздравить коллег!</a>
+<br>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Birthday</th>
+      <th>Email</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users"
+        [ngClass]="{
+          'today': isTodaysBirthday(user),
+          'gold-border': isFirstRecord(user)
+        }">
+      <td>{{ user.UserName }}</td>
+      <td>{{ user.Surname }}</td>
+      <td>
+        {{ user.Birthday | date:'yyyy-MM-dd' }}
+        <span *ngIf="isTodaysBirthday(user)">сегодня!</span>
+      </td>
+      <td>{{ user.Email }}</td>
+      <td>{{ user.Country }}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
